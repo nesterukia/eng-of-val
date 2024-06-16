@@ -19,6 +19,9 @@
 }
 .partners__logos{
     white-space: nowrap;
+    &:hover .partners__slide{
+        animation-play-state: paused;
+    }
 }
 .partners__slide{
     display: inline-block;
@@ -27,7 +30,11 @@
 }
 
 .partners__slide img{
-    height: 20vh;
+    height: 15vh;
     filter: invert(1);
     margin: 0 40px;
+    transition: .3s;
+    &:hover{
+        transform: scale(1.2);
+    }
 }

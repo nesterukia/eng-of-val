@@ -15,6 +15,7 @@
     font-size: 60px;
     font-weight: 800;
     /* letter-spacing: 4px; */
+    z-index: 10;
     text-shadow:
       calc(var(--x) * -1) calc(var(--y) * -1) 0px #ff92ee,
       calc(var(--x) * -2) calc(var(--y) * -2) 0px #fa6cff,

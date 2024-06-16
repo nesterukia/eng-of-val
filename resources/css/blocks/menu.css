@@ -1,7 +1,7 @@
 .menu{
     display: flex;
     flex-direction: row;
-    padding: 10px;
+    align-items: center;
 }
 .menu__element{
     margin-right: 30px;
@@ -9,13 +9,24 @@
     transition: .3s;
     flex-wrap: wrap;
     font-size: 15px;
-    padding: 25px 0;
+    padding: 20px 0;
+    &:hover{
+        transform: translateY(-10px);
+    }
+    &:last-child{
+        margin-right: 0;
+    }
 }
-.menu__element:hover{
-    transform: translateY(-10px);
-
+.menu__link{
+    padding: 20px 0;
 }
-
-.menu__element:last-child{
-    margin-right: 0;
+.menu__button{
+    color: white;
+    background-color: #1a32e0;
+    font-weight: 800;
+    &:hover{
+        color: #1a32e0;
+        background-color: white;
+        transition: 0.3s;
+    }
 }

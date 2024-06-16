@@ -7,5 +7,5 @@
     top: 0;
     left: 0;
     pointer-events: none;
-    z-index: 10; /* so that it stays on top of all other elements */
+    z-index: -0; /* so that it stays on top of all other elements */
   }

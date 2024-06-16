@@ -34,8 +34,8 @@ body{
     border: 2px solid white;
     border-radius: 20px;
     padding: 20px;
-    margin-bottom: 1vh;
-    height: calc(100vh - 159px);
+    margin-bottom: 10px;
+    height: calc(100vh - 160px);
     width: 100%;
     overflow: hidden;
 }
@@ -77,4 +77,8 @@ h1{
 
 img{
     object-fit: cover;
+}
+
+button{
+    all: unset;
 }

@@ -1,0 +1,16 @@
+:root {
+    --x: -8px;
+    --y: -8px;
+  }
+  
+  #crazy-text {
+    color: #fff;
+    font-size: 60px;
+    font-weight: 800;
+    letter-spacing: 4px;
+    text-shadow:
+      calc(var(--x) * -1) calc(var(--y) * -1) 0px #ff92ee,
+      calc(var(--x) * -2) calc(var(--y) * -2) 0px #fa6cff,
+      calc(var(--x) * -3) calc(var(--y) * -3) 0px #d81dc4;
+  }
+  

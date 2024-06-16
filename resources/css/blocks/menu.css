@@ -1,0 +1,21 @@
+.menu{
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+}
+.menu__element{
+    margin-right: 30px;
+    cursor: pointer;
+    transition: .3s;
+    flex-wrap: wrap;
+    font-size: 15px;
+    padding: 25px 0;
+}
+.menu__element:hover{
+    transform: translateY(-10px);
+
+}
+
+.menu__element:last-child{
+    margin-right: 0;
+}

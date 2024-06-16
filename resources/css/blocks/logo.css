@@ -1,0 +1,9 @@
+.logo{
+    height: 100px;
+    width: auto;
+}
+.logo__icon{
+    height: inherit;
+    border-radius: 100px;
+    border: 2px solid #1a32e0;
+}

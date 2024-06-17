@@ -1,9 +1,9 @@
 .logo{
-    height: 100px;
     width: auto;
 }
 .logo__icon{
     max-height: 100px;
-    border-radius: 100px;
+    border-radius: 50%;
+    height: max-content;
     border: 2px solid #1a32e0;
 }

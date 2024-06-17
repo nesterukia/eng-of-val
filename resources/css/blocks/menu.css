@@ -1,5 +1,6 @@
 .menu{
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     align-items: center;
 }
@@ -9,6 +10,7 @@
     transition: .3s;
     flex-wrap: wrap;
     font-size: 15px;
+    height: 100%;
     overflow: hidden;
     padding: 20px 0;
     &:hover{
@@ -20,6 +22,8 @@
 }
 .menu__link{
     padding: 20px 0;
+    height: 100%;
+    overflow: hidden;
 }
 .menu__button{
     color: white;

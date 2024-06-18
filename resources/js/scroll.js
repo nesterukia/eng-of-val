@@ -23,7 +23,7 @@ function scrollToTarget(id) {
     event.preventDefault();
     const id = event.target.getAttribute("data-scroll-to");
     var element = document.querySelector(`[data-section-id='${id}']`);
-    var headerOffset = document.querySelector("header").getBoundingClientRect().height + 10;
+    var headerOffset = 155;
     console.log(headerOffset);
     var elementPosition = element.getBoundingClientRect().top;
     var offsetPosition = elementPosition + window.scrollY - headerOffset;

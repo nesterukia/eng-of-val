@@ -27,7 +27,6 @@ body{
     position: relative;
     height: auto;
     max-width: 100%;
-    /* padding: 0 10vw 5vh 10vw; */
     overflow: hidden;
     background-color: #1a32e0;
 }

@@ -75,6 +75,7 @@ function openModal(event){
                         regFlex.appendChild(message);
 
                         const checkmark = document.createElement("div");
+                        checkmark.classList.add("form__checkmark");
                         fetch("resources/data/checkmark.html")
                             .then((res) => res.text())
                             .then((text) => {

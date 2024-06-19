@@ -44,7 +44,15 @@ body{
     width: 100%;
     overflow: hidden;
 }
+
+.section--bg-white{
+    color:#1a32e0;
+    background-color: white;
+}
 .container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     height: 100%;
     width: 100%;
 }
@@ -82,8 +90,10 @@ h1{
 
 img{
     object-fit: cover;
+    user-select: none;
 }
 
 button{
     all: unset;
+    user-select: none;
 }

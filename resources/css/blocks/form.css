@@ -31,6 +31,7 @@
 
 .form__input{
     border: 2px solid transparent;
+    width: 70%;
     border-radius: 5px;
     padding: 10px;
     background-color: #1a31e02a;
@@ -48,9 +49,6 @@
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    &:last-child{
-        margin-right: 0;
-    }
 }
 .form__button{
     color: white;
@@ -58,6 +56,9 @@
     background-color: #1a32e0;
     font-weight: 800;
     margin-right: 20px;
+    &:last-child{
+        margin-right: 0;
+    }
     &:hover{
         color: #1a32e0;
         background-color: white;
@@ -86,11 +87,12 @@
     font-weight: 600;
     font-size: 30px;
     margin-bottom: 30px;
+    width: 100%;
 }
 
 .form__checkmark{
-    height:100%;
-    width: 100%;
+    /* height:100%;
+    width: 100%; */
     display:flex;
     justify-content:center;
     align-items:center;

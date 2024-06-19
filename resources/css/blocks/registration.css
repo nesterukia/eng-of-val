@@ -1,5 +1,4 @@
 .registration-modal{
-    display: block;
     position: fixed;
     top: 0;
     background: rgba(0, 0, 0, 0.7);
@@ -29,8 +28,8 @@
     position: relative;
     background-color: white;
     border-radius: 20px;
-    padding: 60px;
-    height: 100%;
+    padding: 80px;
+    height: fit-content;
     opacity: 1 ;
 }
 
@@ -47,6 +46,7 @@
 
 .registration__title{
     color: #1a32e0;
+    margin-bottom: 20px;
 }
 
 .registration__form{

@@ -50,6 +50,7 @@
 .about__picture{
     transform: translateY(10%);
     width: 100%;
+    cursor: pointer;
     border-radius: 20px;
     min-height: 50%;
     max-width: 49%;

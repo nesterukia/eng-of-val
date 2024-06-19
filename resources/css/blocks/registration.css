@@ -11,7 +11,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 5vh 5vw;
+    padding: 5vh 20vw;
     z-index: -20;
 }
 
@@ -22,10 +22,14 @@
 }
 
 .registration-flex{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     position: relative;
     background-color: white;
     border-radius: 20px;
-    padding: 40px;
+    padding: 60px;
     height: 100%;
     opacity: 1 ;
 }
@@ -45,4 +49,10 @@
     color: #1a32e0;
 }
 
-
+.registration__form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}

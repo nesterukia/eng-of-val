@@ -1,10 +1,12 @@
 .pictures{
     border: none;
     z-index: 20;
+    cursor: none;
 }
 .pictures .container{
     display: flex;
     justify-content: center;
+    cursor: none;
 }
 .pictures-flex{
     display: flex;
@@ -47,8 +49,6 @@
     height: 100%;
     padding: 30px;
     opacity: 0;
-    /* pointer-events: none; */
-    cursor: pointer;
     max-height: 100vh;
     border-radius: inherit;
     transition: opacity .6s;

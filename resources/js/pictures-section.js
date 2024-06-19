@@ -6,7 +6,7 @@ let runAnimation = true;
 let inputNum = 0;
 
 picturesSection.addEventListener("mouseover", e =>{
-    e.target.style.cursor = 'default';
+    e.target.style.cursor = 'pointer';
     circles.forEach(circle => {
         circle.style.opacity = '0';
     });
@@ -18,6 +18,7 @@ picturesSection.addEventListener("mouseout", e =>{
         circle.style.opacity = '1';
     });
 })
+
 
 contents.forEach(content => {
     content.addEventListener("mouseover", e =>{
@@ -38,7 +39,6 @@ for (let i = 0; i < labels.length; i++) {
 
 setInterval(() => {
     if(runAnimation){
-        console.log(inputNum);
         inputs.forEach(input => {
             input.checked = false;
         });

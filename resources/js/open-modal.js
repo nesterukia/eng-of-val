@@ -73,6 +73,14 @@ function openModal(event){
                         }
                         message.appendChild(messageText);
                         regFlex.appendChild(message);
+
+                        const checkmark = document.createElement("div");
+                        fetch("resources/data/checkmark.html")
+                            .then((res) => res.text())
+                            .then((text) => {
+                                checkmark.innerHTML = text;
+                            });
+                        regFlex.appendChild(checkmark);
                     });
             } else console.log("invalid!");
         });

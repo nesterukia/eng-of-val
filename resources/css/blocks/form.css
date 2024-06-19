@@ -85,4 +85,13 @@
     color:#1a32e0;
     font-weight: 600;
     font-size: 30px;
+    margin-bottom: 30px;
+}
+
+.form__checkmark{
+    height:100%;
+    width: 100%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
 }

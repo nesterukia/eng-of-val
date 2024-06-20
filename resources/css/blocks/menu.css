@@ -11,13 +11,21 @@
     flex-wrap: wrap;
     font-size: 15px;
     height: 100%;
-    overflow: hidden;
+    overflow:visible;
     padding: 20px 0;
     &:hover{
         transform: translateY(-10px);
     }
     &:last-child{
         margin-right: 0;
+    }
+
+    &:hover .menu__button{
+        color: #1a32e0;
+        background-color: white;
+        border-color: #1a32e0;
+        transition: 0.3s;
+        box-shadow: 5px 5px 2px #1a32e0;
     }
 }
 .menu__link{
@@ -29,10 +37,5 @@
     color: white;
     background-color: #1a32e0;
     font-weight: 800;
-    &:hover{
-        color: #1a32e0;
-        background-color: white;
-        border-color: #1a32e0;
-        transition: 0.3s;
-    }
+    transition: box-shadow 0.3s;
 }

@@ -5,10 +5,11 @@
 .main-section__logo{
     width: 100%;
     height: 100%;
+    transform: rotate(90deg);
 }
 
 .main-logo__text{
-    font-size: 5.45px;
+    font-size: 5.435px;
     fill: white;
 }
 

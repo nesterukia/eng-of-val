@@ -28,18 +28,15 @@ function openModal(event){
     regModal.appendChild(container);
     container.appendChild(regFlex);
 
-
     fetch("resources/data/reg-modal-inner.html")
     .then((res) => res.text())
     .then((text) => {
         regFlex.innerHTML = text;
-
         const crossButton = document.querySelector(".registration__cross-button");
         crossButton.addEventListener('click', e =>{
             regModal.classList.remove('registration-modal--visible');
             regModal.remove();
             body.classList.remove('body--no-scroll');
-        
             circles.forEach(circle => {
                 circle.style.display = 'block';
             });
@@ -52,7 +49,6 @@ function openModal(event){
             const email = form.querySelector("[name='email']");
             const isValid = validateFields(form, [fullName, email]);
             if(isValid){
-                console.log("loading...");
                 regFlex.innerHTML = '<div class="form__loader"><div class="loader"></div>';
                 let data = new FormData(form);
                 fetch('https://script.google.com/macros/s/AKfycbxh5diO40OrOZkCOS-1S6XT8MA4PURGNY8cRfw4Psh6vaeiTBAx0ct4CurFR8VhxNRi/exec',{

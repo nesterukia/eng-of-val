@@ -11,7 +11,6 @@ let inputNum = 0;
 
 leftButton.addEventListener("click", e =>{
     runAnimation = false;
-    console.log("before", inputNum);
     if(inputNum == 0){
         inputNum = 5;
     } else inputNum--;
@@ -19,7 +18,6 @@ leftButton.addEventListener("click", e =>{
         input.checked = false;
     });
     inputs[inputNum].checked = true;
-    console.log("after", inputNum);
     setTimeout(()=>{
         runAnimation = true;
     }, 5000);
@@ -27,7 +25,6 @@ leftButton.addEventListener("click", e =>{
 
 rightButton.addEventListener("click", e =>{
     runAnimation = false;
-    console.log("before", inputNum);
     if(inputNum == 5){
         inputNum = 0;
     } else inputNum++;
@@ -35,7 +32,6 @@ rightButton.addEventListener("click", e =>{
         input.checked = false;
     });
     inputs[inputNum].checked = true;
-    console.log("after", inputNum);
     setTimeout(()=>{
         runAnimation = true;
     }, 5000);

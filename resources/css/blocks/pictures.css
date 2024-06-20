@@ -69,7 +69,7 @@
     width: 120%;
     top:-2%;
     background-color: #050a2f5b;
-    filter: blur(8px);
+    filter: blur(12px);
   }
   .pictures__left-button-icon, .pictures__right-button-icon{
     display: block;

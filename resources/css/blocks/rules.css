@@ -43,5 +43,6 @@
         color: #1a32e0;
         background-color: white;
         transition: 0.3s;
+        border-color: #1a32e0;
     }
 }

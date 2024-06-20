@@ -68,20 +68,20 @@ function openModal(event){
                         let messageText;
                         if(data.result == 'success'){
                             messageText = document.createTextNode("Ваша заявка успешно отправлена!");
+                            message.appendChild(messageText);
+                            const checkmark = document.createElement("div");
+                            checkmark.classList.add("form__checkmark");
+                            fetch("resources/data/checkmark.html")
+                                .then((res) => res.text())
+                                .then((text) => {
+                                    checkmark.innerHTML = text;
+                                });
+                            message.appendChild(checkmark);
                         } else{
-                            messageText = document.createTextNode("Ваша заявка успешно отправлена!");
+                            messageText = document.createTextNode("Что-то пошло не так. Попробуйте позже.");
+                            message.appendChild(messageText);
                         }
-                        message.appendChild(messageText);
                         regFlex.appendChild(message);
-
-                        const checkmark = document.createElement("div");
-                        checkmark.classList.add("form__checkmark");
-                        fetch("resources/data/checkmark.html")
-                            .then((res) => res.text())
-                            .then((text) => {
-                                checkmark.innerHTML = text;
-                            });
-                        regFlex.appendChild(checkmark);
                     });
             } else console.log("invalid!");
         });

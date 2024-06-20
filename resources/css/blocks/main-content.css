@@ -1,5 +1,9 @@
 .main-content{
     max-width: 100%;
-    margin-top: 150px;
+    margin-top: 145px;
     cursor: none;
+    padding: 0 10vw;
+    background: linear-gradient(135deg,  rgba(255,255,255,1) 0%, rgba(26,50,224,1) 50%, rgba(255,255,255,1) 100%);
+    background-size: 100vw calc(100vh - 145px);
+    background-repeat: repeat-y;
 }

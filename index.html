@@ -30,223 +30,221 @@
         <div class="circle"></div>
         <div class="circle"></div>
         <div class="circle"></div>
-        <div class="header-wrapper">
-            <header class="header">
-                <div class="container">
-                    <div class="header-flex">
-                        <a href="/" class="header__logo logo">
-                            <img src="resources/images/icons/logo.jpg" alt="" class="logo__icon">
-                        </a>
-                        <div class="intro-section__menu">
-                            <ul class="menu">
-                                <li class="menu__element">
-                                    <a class="menu__link" href="" data-scroll-to="main">Главная</a>
-                                </li>
-                                <li class="menu__element">
-                                    <a class="menu__link" href="" data-scroll-to="about">О конкурсе</a>
-                                </li>
-                                <li class="menu__element">
-                                    <a class="menu__link" href="" data-scroll-to="nominations">Номинации</a>
-                                </li>
-                                <li class="menu__element">
-                                    <a class="menu__link" href="" data-scroll-to="speakers">Спикеры</a>
-                                </li>
-                                <li class="menu__element">
-                                    <a class="menu__link" href="" data-scroll-to="experts">Эксперты</a>
-                                </li>
-                                <li class="menu__element">
-                                    <a class="menu__link" href="" data-scroll-to="team">Команда</a>
-                                </li>
-                                <li class="menu__element">
-                                    <a class="menu__link" href="" data-scroll-to="faq">FAQ</a>
-                                </li>
-                                <li class="menu__element">
-                                    <a class="menu__link" href="" data-scroll-to="rules">Положение</a>
-                                </li>
-                                <li class="menu__element">
-                                    <a class="menu__link" href="" data-scroll-to="partners">Партнеры</a>
-                                </li>
-                                <li class="menu__element">
-                                    <a href="">
-                                        <button class="button menu__button">Подать заявку</button>
-                                    </a>
-                                </li>
-                                <li class="menu__element">
-                                    <a class="menu__link" href="" data-scroll-to="contacts">Контакты</a>
-                                </li>
-                            </ul>
+        <header class="header">
+            <div class="container">
+                <div class="header-flex">
+                    <a href="/" class="header__logo logo">
+                        <img src="resources/images/icons/logo.jpg" alt="" class="logo__icon">
+                    </a>
+                    <div class="intro-section__menu">
+                        <ul class="menu">
+                            <li class="menu__element">
+                                <a class="menu__link" href="" data-scroll-to="main">Главная</a>
+                            </li>
+                            <li class="menu__element">
+                                <a class="menu__link" href="" data-scroll-to="about">О конкурсе</a>
+                            </li>
+                            <li class="menu__element">
+                                <a class="menu__link" href="" data-scroll-to="nominations">Номинации</a>
+                            </li>
+                            <li class="menu__element">
+                                <a class="menu__link" href="" data-scroll-to="speakers">Спикеры</a>
+                            </li>
+                            <li class="menu__element">
+                                <a class="menu__link" href="" data-scroll-to="experts">Эксперты</a>
+                            </li>
+                            <li class="menu__element">
+                                <a class="menu__link" href="" data-scroll-to="team">Команда</a>
+                            </li>
+                            <li class="menu__element">
+                                <a class="menu__link" href="" data-scroll-to="faq">FAQ</a>
+                            </li>
+                            <li class="menu__element">
+                                <a class="menu__link" href="" data-scroll-to="rules">Положение</a>
+                            </li>
+                            <li class="menu__element">
+                                <a class="menu__link" href="" data-scroll-to="partners">Партнеры</a>
+                            </li>
+                            <li class="menu__element">
+                                <a href="">
+                                    <button class="button menu__button">Подать заявку</button>
+                                </a>
+                            </li>
+                            <li class="menu__element">
+                                <a class="menu__link" href="" data-scroll-to="contacts">Контакты</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+    </header>
+    <div class="main-content">
+        <section data-section-id="main" class="section main">
+            <div class="container">
+                <div class="main-flex"></div>
+            </div>
+        </section>
+        <section data-section-id="about" class="section about">
+            <div class="container">
+                <div class="about-flex">
+                    <div class="about__description">
+                        <h1 id="crazy-text" class="about__title">Инженеры смыслов</h1>
+                        <p class="about__text">
+                            «Инженеры смыслов» —
+                            молодежный образовательный проект, организаторами которого выступает Высшая школа медиакоммуникаций и связей с общественностью Гуманитарного института Санкт-Петербургского политехнического университета Петра Великого при поддержке АПСО.
+                        </p>
+                    </div>
+                    <img class="about__picture" src="resources/images/pictures/about.jpg" alt="about">
+                </div>
+            </div>
+        </section>
+        <section data-section-id="nominations" class="section nominations">
+            <div class="container">
+                <div class="nominations-flex">
+                    <h1 class="nominations__title">Номинации</h1>
+                </div>
+            </div>
+        </section>
+        <section data-section-id="speakers" class="section speakers">
+            <div class="container">
+                <div class="speakers-flex">
+                    <h1 class="speakers__title">Спикеры</h1>
+                </div>
+            </div>
+        </section>
+        <section data-section-id="experts" class="section experts">
+            <div class="container">
+                <div class="experts-flex">
+                    <h1 class="experts__title">Эксперты</h1>
+                </div>
+            </div>
+        </section>
+        <section class="section pictures">
+            <div class="container">
+                <div class="pictures-flex">
+                    <!-- This example illustrates how to create layout of slides stacked on each  other(especially useful for fade in/out transitions). It's achieved without setting their height and avoiding position: absolute; so they are fully flexible and easy to keep in normal page flow. -->
+                    <input class="pictures__input" type="radio" name="switch" id="i_1" checked>
+                    <input class="pictures__input" type="radio" name="switch" id="i_2">
+                    <input class="pictures__input" type="radio" name="switch" id="i_3">
+                    <input class="pictures__input" type="radio" name="switch" id="i_4">
+                    <input class="pictures__input" type="radio" name="switch" id="i_5">
+                    <input class="pictures__input" type="radio" name="switch" id="i_6">
+                    <div class="slide-wrapper">
+                        <div class="slide">
+                            <div class="content content1"></div>
                         </div>
-                    </div>
-                </div>
-        </header>
-        </div>
-        <div class="main-content">
-            <section data-section-id="main" class="section main">
-                <div class="container">
-                    <div class="main-flex"></div>
-                </div>
-            </section>
-            <section data-section-id="about" class="section about">
-                <div class="container">
-                    <div class="about-flex">
-                        <div class="about__description">
-                            <h1 id="crazy-text" class="about__title">Инженеры смыслов</h1>
-                            <p class="about__text">
-                                «Инженеры смыслов» —
-                                молодежный образовательный проект, организаторами которого выступает Высшая школа медиакоммуникаций и связей с общественностью Гуманитарного института Санкт-Петербургского политехнического университета Петра Великого при поддержке АПСО.
-                            </p>
+                        <div class="slide">
+                            <div class="content content2"></div>   
+                        </div> 
+                        <div class="slide">
+                            <div class="content content3"></div>
                         </div>
-                        <img class="about__picture" src="resources/images/pictures/about.jpg" alt="about">
-                    </div>
-                </div>
-            </section>
-            <section data-section-id="nominations" class="section nominations">
-                <div class="container">
-                    <div class="nominations-flex">
-                        <h1 class="nominations__title">Номинации</h1>
-                    </div>
-                </div>
-            </section>
-            <section data-section-id="speakers" class="section speakers">
-                <div class="container">
-                    <div class="speakers-flex">
-                        <h1 class="speakers__title">Спикеры</h1>
-                    </div>
-                </div>
-            </section>
-            <section data-section-id="experts" class="section experts">
-                <div class="container">
-                    <div class="experts-flex">
-                        <h1 class="experts__title">Эксперты</h1>
-                    </div>
-                </div>
-            </section>
-            <section class="section pictures">
-                <div class="container">
-                    <div class="pictures-flex">
-                        <!-- This example illustrates how to create layout of slides stacked on each  other(especially useful for fade in/out transitions). It's achieved without setting their height and avoiding position: absolute; so they are fully flexible and easy to keep in normal page flow. -->
-                        <input class="pictures__input" type="radio" name="switch" id="i_1" checked>
-                        <input class="pictures__input" type="radio" name="switch" id="i_2">
-                        <input class="pictures__input" type="radio" name="switch" id="i_3">
-                        <input class="pictures__input" type="radio" name="switch" id="i_4">
-                        <input class="pictures__input" type="radio" name="switch" id="i_5">
-                        <input class="pictures__input" type="radio" name="switch" id="i_6">
-                        <div class="slide-wrapper">
-                            <div class="slide">
-                                <div class="content content1"></div>
-                            </div>
-                            <div class="slide">
-                                <div class="content content2"></div>   
-                            </div> 
-                            <div class="slide">
-                                <div class="content content3"></div>
-                            </div>
-                            <div class="slide">
-                                <div class="content content4"></div>    
-                            </div>
-                            <div class="slide">
-                                <div class="content content5"></div>    
-                            </div>
-                            <div class="slide">
-                                <div class="content content6"></div>   
-                            </div>  
+                        <div class="slide">
+                            <div class="content content4"></div>    
                         </div>
-                        <div class="pictures__controls">
-                            <label class="pictures__label" for="i_1">⬤</label>
-                            <label class="pictures__label" for="i_2">⬤</label>
-                            <label class="pictures__label" for="i_3">⬤</label>
-                            <label class="pictures__label" for="i_4">⬤</label>
-                            <label class="pictures__label" for="i_5">⬤</label>
-                            <label class="pictures__label" for="i_6">⬤</label>
+                        <div class="slide">
+                            <div class="content content5"></div>    
                         </div>
+                        <div class="slide">
+                            <div class="content content6"></div>   
+                        </div>  
+                    </div>
+                    <div class="pictures__controls">
+                        <label class="pictures__label" for="i_1">⬤</label>
+                        <label class="pictures__label" for="i_2">⬤</label>
+                        <label class="pictures__label" for="i_3">⬤</label>
+                        <label class="pictures__label" for="i_4">⬤</label>
+                        <label class="pictures__label" for="i_5">⬤</label>
+                        <label class="pictures__label" for="i_6">⬤</label>
+                    </div>
 
+                </div>
+            </div>
+        </section>
+        <section data-section-id="team" class="section team">
+            <div class="container">
+                <div class="team-flex">
+                    <h1 class="team__title">Команда</h1>
+                </div>
+            </div>
+        </section>
+        <section data-section-id="faq"class="section section--bg-white faq">
+            <div class="container">
+                <div class="faq-flex">
+                    <h1 class="faq__title">FAQ</h1>
+                </div>
+            </div>
+        </section>
+        <section data-section-id="rules" class="section rules">
+            <div class="container">
+                <div class="rules-flex">
+                    <h1 class="rules__title">Положение</h1>
+                    <div class="rules__document-container">
+                        <object class="rules__document" data='resources/data/polozhenie-2024.pdf'>
+                            <div class="rules__fallback">
+                                <p>Вся подробную информацию о конкурсе можно найти в положении.</p>
+                                <p><a href="resources/data/polozhenie-2024.pdf">
+                                    <button class="button rules__button">Скачать положение</button>
+                                </a></p>
+                            </div>
+                        </object>
                     </div>
                 </div>
-            </section>
-            <section data-section-id="team" class="section team">
-                <div class="container">
-                    <div class="team-flex">
-                        <h1 class="team__title">Команда</h1>
-                    </div>
-                </div>
-            </section>
-            <section data-section-id="faq"class="section section--bg-white faq">
-                <div class="container">
-                    <div class="faq-flex">
-                        <h1 class="faq__title">FAQ</h1>
-                    </div>
-                </div>
-            </section>
-            <section data-section-id="rules" class="section rules">
-                <div class="container">
-                    <div class="rules-flex">
-                        <h1 class="rules__title">Положение</h1>
-                        <div class="rules__document-container">
-                            <object class="rules__document" data='resources/data/polozhenie-2024.pdf'>
-                                <div class="rules__fallback">
-                                    <p>Вся подробную информацию о конкурсе можно найти в положении.</p>
-                                    <p><a href="resources/data/polozhenie-2024.pdf">
-                                        <button class="button rules__button">Скачать положение</button>
-                                    </a></p>
-                                </div>
-                            </object>
+            </div>
+        </section>
+        <section data-section-id="partners" class="section partners">
+            <div class="container">
+                <div class="partners-flex">
+                    <h1 class="partners__title">Партнеры</h1>
+                    <div class="partners__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit ipsum quod, omnis consequatur porro voluptates temporibus. Accusamus autem eos voluptatibus ut itaque, cupiditate, repudiandae quisquam facilis quia consectetur, minima odio!</div>
+                    <div class="partners__logos">
+                        <div class="partners__slide">
+                            <a href="">
+                                <img src="resources/images/partners/forbes.svg" alt="forbes">
+                            </a>
+                            <a href="" class="">
+                                <img src="resources/images/partners/mrbeast.svg" alt="mrbeast">
+                            </a>
+                            <a href="">
+                                <img src="resources/images/partners/budweiser.svg" alt="budweiser">
+                            </a>
+                            <a href="">
+                                <img src="resources/images/partners/buzzfeed.svg" alt="buzzfeed">                                    
+                            </a>
+                            <a href="">
+                                <img src="resources/images/partners/menshealth.svg" alt="menshealth">
+                            </a>
+                        </div>
+                        <div class="partners__slide">
+                            <a href="">
+                                <img src="resources/images/partners/forbes.svg" alt="forbes">
+                            </a>
+                            <a href="" class="">
+                                <img src="resources/images/partners/mrbeast.svg" alt="mrbeast">
+                            </a>
+                            <a href="">
+                                <img src="resources/images/partners/budweiser.svg" alt="budweiser">
+                            </a>
+                            <a href="">
+                                <img src="resources/images/partners/buzzfeed.svg" alt="buzzfeed">                                    
+                            </a>
+                            <a href="">
+                                <img src="resources/images/partners/menshealth.svg" alt="menshealth">
+                            </a>
                         </div>
                     </div>
                 </div>
-            </section>
-            <section data-section-id="partners" class="section partners">
-                <div class="container">
-                    <div class="partners-flex">
-                        <h1 class="partners__title">Партнеры</h1>
-                        <div class="partners__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit ipsum quod, omnis consequatur porro voluptates temporibus. Accusamus autem eos voluptatibus ut itaque, cupiditate, repudiandae quisquam facilis quia consectetur, minima odio!</div>
-                        <div class="partners__logos">
-                            <div class="partners__slide">
-                                <a href="">
-                                    <img src="resources/images/partners/forbes.svg" alt="forbes">
-                                </a>
-                                <a href="" class="">
-                                    <img src="resources/images/partners/mrbeast.svg" alt="mrbeast">
-                                </a>
-                                <a href="">
-                                    <img src="resources/images/partners/budweiser.svg" alt="budweiser">
-                                </a>
-                                <a href="">
-                                    <img src="resources/images/partners/buzzfeed.svg" alt="buzzfeed">                                    
-                                </a>
-                                <a href="">
-                                    <img src="resources/images/partners/menshealth.svg" alt="menshealth">
-                                </a>
-                            </div>
-                            <div class="partners__slide">
-                                <a href="">
-                                    <img src="resources/images/partners/forbes.svg" alt="forbes">
-                                </a>
-                                <a href="" class="">
-                                    <img src="resources/images/partners/mrbeast.svg" alt="mrbeast">
-                                </a>
-                                <a href="">
-                                    <img src="resources/images/partners/budweiser.svg" alt="budweiser">
-                                </a>
-                                <a href="">
-                                    <img src="resources/images/partners/buzzfeed.svg" alt="buzzfeed">                                    
-                                </a>
-                                <a href="">
-                                    <img src="resources/images/partners/menshealth.svg" alt="menshealth">
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
+            </div>
+        </section>
 
-            <section data-section-id="contacts" class="section contacts">
-                <div class="container">
-                    <div class="contacts-flex">
-                        <h1 class="contacts__title">Контакты</h1>
-                    </div>
+        <section data-section-id="contacts" class="section contacts">
+            <div class="container">
+                <div class="contacts-flex">
+                    <h1 class="contacts__title">Контакты</h1>
                 </div>
-            </section>
-        </div>
+            </div>
+        </section>
+    </div>
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
     <script src="resources/js/scroll.js"></script>

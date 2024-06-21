@@ -19,7 +19,6 @@
     &:last-child{
         margin-right: 0;
     }
-
     &:hover .menu__button{
         color: #1a32e0;
         background-color: white;
@@ -32,6 +31,7 @@
     padding: 20px 0;
     height: 100%;
     overflow: hidden;
+    transition: box-shadow 0.3s;
 }
 .menu__button{
     color: white;

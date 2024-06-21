@@ -49,6 +49,9 @@
     &:hover > img{
       transform: scale(1.1);
     }
+    &:hover > div{
+      background-color: #050a2f7d;
+    }
   }
   .pictures__left-button{
     left: 0;
@@ -70,6 +73,7 @@
     top:-2%;
     background-color: #050a2f5b;
     filter: blur(12px);
+    transition: background-color 0.3s;
   }
   .pictures__left-button-icon, .pictures__right-button-icon{
     display: block;

@@ -94,3 +94,9 @@ button{
     all: unset;
     user-select: none;
 }
+
+textarea{
+    width: 100%;
+    resize: vertical;
+    min-height: 50px;
+}

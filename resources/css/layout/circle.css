@@ -9,5 +9,5 @@
   left: 0;
   pointer-events: none;
   transition: opacity .15s;
-  z-index: 5; /* so that it stays on top of all other elements */
+  z-index: 100; /* so that it stays on top of all other elements */
 }

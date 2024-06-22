@@ -12,7 +12,7 @@ let inputNum = 0;
 leftButton.addEventListener("click", e =>{
     runAnimation = false;
     if(inputNum == 0){
-        inputNum = 5;
+        inputNum = 9;
     } else inputNum--;
     inputs.forEach(input => {
         input.checked = false;
@@ -25,7 +25,7 @@ leftButton.addEventListener("click", e =>{
 
 rightButton.addEventListener("click", e =>{
     runAnimation = false;
-    if(inputNum == 5){
+    if(inputNum == 9){
         inputNum = 0;
     } else inputNum++;
     inputs.forEach(input => {
@@ -75,7 +75,7 @@ setInterval(() => {
         });
         inputs[inputNum].checked = true;
         inputNum++;
-        if(inputNum == 6){
+        if(inputNum == 10){
             inputNum = 0;
         }
     }

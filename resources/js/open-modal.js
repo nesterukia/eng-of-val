@@ -1,3 +1,4 @@
+const scriptURL = "https://script.google.com/macros/s/AKfycbwHLtWZfMEi-J3EhIpLM-immQIx1Nqbd_qOtk-_bx_hWysJATCGoa1PEfbq6kcUFWTU/exec";
 const menuButton = document.querySelector(".menu__button");
 const body = document.querySelector("body");
 menuButton.addEventListener('click', openModal);
@@ -45,13 +46,15 @@ function openModal(event){
         const form = document.querySelector(".form");
         form.addEventListener("submit", (e)=>{
             e.preventDefault();
-            const fullName = form.querySelector("[name='full-name']");
-            const email = form.querySelector("[name='email']");
-            const isValid = validateFields(form, [fullName, email]);
+            const fields = document.querySelectorAll(".form__input");
+            const isValid = validateFields(form, fields);
             if(isValid){
                 regFlex.innerHTML = '<div class="form__loader"><div class="loader"></div>';
                 let data = new FormData(form);
-                fetch('https://script.google.com/macros/s/AKfycbxh5diO40OrOZkCOS-1S6XT8MA4PURGNY8cRfw4Psh6vaeiTBAx0ct4CurFR8VhxNRi/exec',{
+                data.forEach((value, key) => {
+                    console.log(value, key);
+                });
+                fetch(scriptURL,{
                     method: "POST",
                     body: data
                 })

@@ -115,22 +115,34 @@
   }
 
   .content1{
-    background-image: url("../../images/pictures/picture-carousel-1.webp");
+    background-image: url("../../images/pictures/picture-carousel-1.jpg");
   }
   .content2{
-    background-image: url("../../images/pictures/picture-carousel-2.webp");
+    background-image: url("../../images/pictures/picture-carousel-2.jpeg");
   }
   .content3{
-    background-image: url("../../images/pictures/picture-carousel-3.webp");
+    background-image: url("../../images/pictures/picture-carousel-3.jpg");
   }
   .content4{
-    background-image: url("../../images/pictures/picture-carousel-4.webp");
+    background-image: url("../../images/pictures/picture-carousel-4.jpg");
   }
   .content5{
-    background-image: url("../../images/pictures/picture-carousel-5.webp");
+    background-image: url("../../images/pictures/picture-carousel-5.jpeg");
   }
   .content6{
-    background-image: url("../../images/pictures/picture-carousel-6.webp");
+    background-image: url("../../images/pictures/picture-carousel-6.jpg");
+  }
+  .content7{
+    background-image: url("../../images/pictures/picture-carousel-7.jpg");
+  }
+  .content8{
+    background-image: url("../../images/pictures/picture-carousel-8.jpg");
+  }
+  .content9{
+    background-image: url("../../images/pictures/picture-carousel-9.jpg");
+  }
+  .content10{
+    background-image: url("../../images/pictures/picture-carousel-10.jpg");
   }
 
   .content1, 
@@ -138,7 +150,11 @@
   .content3,
   .content4,
   .content5,
-  .content6{
+  .content6,
+  .content7,
+  .content8,
+  .content9,
+  .content10{
     background-size: cover;
   }
   #i_1:checked ~ .slide-wrapper .content1,
@@ -146,7 +162,11 @@
   #i_3:checked ~ .slide-wrapper .content3,
   #i_4:checked ~ .slide-wrapper .content4,
   #i_5:checked ~ .slide-wrapper .content5,
-  #i_6:checked ~ .slide-wrapper .content6 {
+  #i_6:checked ~ .slide-wrapper .content6,
+  #i_7:checked ~ .slide-wrapper .content7,
+  #i_8:checked ~ .slide-wrapper .content8,
+  #i_9:checked ~ .slide-wrapper .content9,
+  #i_10:checked ~ .slide-wrapper .content10 {
     opacity: 1;
     pointer-events: auto;
   }
@@ -167,6 +187,10 @@
   #i_3:checked ~ .pictures__controls label[for="i_3"],
   #i_4:checked ~ .pictures__controls label[for="i_4"],
   #i_5:checked ~ .pictures__controls label[for="i_5"],
-  #i_6:checked ~ .pictures__controls label[for="i_6"] {
+  #i_6:checked ~ .pictures__controls label[for="i_6"],
+  #i_7:checked ~ .pictures__controls label[for="i_7"],
+  #i_8:checked ~ .pictures__controls label[for="i_8"],
+  #i_9:checked ~ .pictures__controls label[for="i_9"],
+  #i_10:checked ~ .pictures__controls label[for="i_10"] {
     color: #1a32e0;
   }

@@ -12,6 +12,7 @@
     &:last-child{
         margin-right: 0;
     }
+    overflow: hidden;
 }
 
 

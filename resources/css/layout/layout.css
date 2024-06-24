@@ -32,14 +32,16 @@ body{
 
 
 .section{
-    /* border: 2px solid white; */
     border-radius: 20px;
     padding: 20px;
     /* margin-bottom: 10px; */
     height: calc(100vh - 145px);
     width: 100%;
     overflow: hidden;
-    /* background: linear-gradient(135deg,  rgba(255,255,255,1) 0%, rgba(26,50,224,1) 50%, rgba(255,255,255,1) 100%); */
+}
+
+.section--overflow-visible{
+    overflow: visible;
 }
 
 .section--bg-white{

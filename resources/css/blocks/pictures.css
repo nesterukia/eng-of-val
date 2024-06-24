@@ -47,7 +47,8 @@
     z-index: 5;
     height: 100%;
     &:hover > img{
-      transform: scale(1.1);
+      opacity: 0.8;
+      transform: scale(1.05);
     }
     &:hover > div{
       background-color: #050a2f7d;
@@ -82,8 +83,8 @@
     height: 50px;
     width: 50px;
     margin: 0 10px;
-
-    transition: transform 0.3s;
+    opacity: 0.5;
+    transition: 0.3s;
   }
   
   .slide {
@@ -192,5 +193,5 @@
   #i_8:checked ~ .pictures__controls label[for="i_8"],
   #i_9:checked ~ .pictures__controls label[for="i_9"],
   #i_10:checked ~ .pictures__controls label[for="i_10"] {
-    color: #1a32e0;
+    color: #1a31e0;
   }

@@ -70,7 +70,7 @@ async function initMap() {
           ]
         },
         style: {
-          stroke: [{width: 4, color: '#1a32e0', dasharray: 40}]
+          stroke: [{width: 4, color: '#1a32e089', dasharray: 40}]
         }
       });
       

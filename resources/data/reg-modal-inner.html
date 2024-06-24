@@ -7,19 +7,141 @@
         <div class="form__col">
             <div class="form__row">
                 <label class="form__block">
-                    <div class="form__title">ФИО</div>
-                    <input type="text" name="full-name" class="form__input">
+                    <div class="form__title">ФИО авторов</div>
+                    <textarea type="text" name="ФИО авторов" class="form__input" placeholder="Перечислите через запятую (до 5 человек)"></textarea>
                 </label>
             </div>
             <div class="form__row">
                 <label class="form__block">
-                    <div class="form__title">E-mail</div>
-                    <input type="email" name="email" class="form__input">
+                    <div class="form__title">Город</div>
+                    <input type="text" name="Город"class="form__input">
+                </label>
+            </div>
+            <div class="form__row">
+                <label class="form__block">
+                    <div class="form__title">Место учебы</div>
+                    <input type="text" name="Место учебы" class="form__input">
+                </label>
+            </div>
+            <div class="form__row">
+                <label class="form__block">
+                    <div class="form__title">Факультет</div>
+                    <input type="text" name="Факультет" class="form__input">
+                </label>
+            </div>
+            <div class="form__row">
+                <label class="form__block">
+                    <div class="form__title">Направление подготовки</div>
+                    <input type="text" name="Направление подготовки" class="form__input">
+                </label>
+            </div>
+            <div class="form__row">
+                <label class="form__block">
+                    <div class="form__title">Курс</div>
+                    <select class="form__input" name="Курс">
+                        <option value="Бакалавриат 1 курс">Бакалавриат 1 курс</option>
+                        <option value="Бакалавриат 2 курс">Бакалавриат 2 курс</option>
+                        <option value="Бакалавриат 3 курс">Бакалавриат 3 курс</option>
+                        <option value="Бакалавриат 4 курс">Бакалавриат 4 курс</option>
+                        <option value="Магистратура 1 курс">Магистратура 1 курс</option>
+                        <option value="Магистратура 2 курс">Магистратура 2 курс</option>
+                        <option value="Другое">Другое</option>
+                    </select>
+                </label>
+            </div>
+            <div class="form__row">
+                <label class="form__block">
+                    <div class="form__title">Ссылка на ВК участников</div>
+                    <textarea type="text" name="Ссылка на ВК участников" class="form__input"></textarea>
+                </label>
+            </div>
+            <div class="form__row">
+                <label class="form__block">
+                    <div class="form__title">Номер телефона</div>
+                    <textarea type="text" name="Номер телефона" class="form__input"></textarea>
+                </label>
+            </div>
+            <div class="form__row">
+                <label class="form__block">
+                    <div class="form__title">Email капитана команды</div>
+                    <input type="email" name="Email капитана команды" class="form__input">
+                </label>
+            </div>
+            <div class="form__row">
+                <label class="form__block">
+                    <div class="form__title">Номинация</div>
+                    <select class="form__input" name="Номинация">
+                        <option value="«Лучшая теоретическая работа»">«Лучшая теоретическая работа»</option>
+                        <option value="«Лучшая практическая работа для образовательной организации»">«Лучшая практическая работа для образовательной организации»</option>
+                        <option value="«Лучшая практическая работа в отрасли»">«Лучшая практическая работа в отрасли»</option>
+                        <option value="«Семейные ценности»">«Семейные ценности»</option>
+                        <option value="«Имидж инженерных профессий»">«Имидж инженерных профессий»</option>
+                        <option value="«Визионер коммуникационной индустрии»">«Визионер коммуникационной индустрии»</option>
+                    </select>
+                </label>
+            </div>
+            <div class="form__row">
+                <label class="form__block">
+                    <div class="form__title">Название работы</div>
+                    <input type="text" name="Название работы" class="form__input">
+                </label>
+            </div>
+            <div class="form__row">
+                <label class="form__block">
+                    <div class="form__title">Ваша работа в формате Word</div>
+                    <input type="file" accept=".doc, .docx" id="word" name="Работа в формате Word" class="form__input" onchange="LoadFile(event)"/>
+                    <input type="hidden" id="wordFileData" name="wordFileData" />
+                    <input type="hidden" id="wordMimeType" name="wordMimeType" />
+                    <input type="hidden" id="wordFileName" name="wordFileName" />
+                </label>
+            </div>
+            <div class="form__row">
+                <label class="form__block">
+                    <div class="form__title">Презентация работы в PDF-формате</div>
+                    <input type="file" id="presentation" accept=".pdf" name="Презентация работы" class="form__input" onchange="LoadFile(event)"/>
+                    <input type="hidden" id="presentationFileData" name="presentationFileData" />
+                    <input type="hidden" id="presentationMimeType" name="presentationMimeType" />
+                    <input type="hidden" id="presentationFileName" name="presentationFileName" />
+                </label>
+            </div>
+            <div class="form__row">
+                <label class="form__block">
+                    <div class="form__title">Ссылка на работу и описание к ней на облачном хранилище</div>
+                    <input type="url" name="Ссылка на работу" class="form__input">
+                </label>
+            </div>
+            <div class="form__row">
+                <label class="form__block">
+                    <div class="form__title">ФИО научного руководителя</div>
+                    <input type="text" name="ФИО научного руководителя" class="form__input">
+                </label>
+            </div>
+            <div class="form__row">
+                <label class="form__block">
+                    <div class="form__title">Должность и ученая степень научного руководителя</div>
+                    <input type="text" name="Должность и ученая степень научного руководителя" class="form__input">
+                </label>
+            </div>
+            <div class="form__row">
+                <label class="form__block">
+                    <div class="form__title">Email научного руководителя</div>
+                    <input type="email" name="Email научного руководителя" class="form__input">
+                </label>
+            </div>
+            <div class="form__row">
+                <label class="form__block">
+                    <div class="form__title">Откуда вы узнали о конкурсе</div>
+                    <select class="form__input" name="Откуда вы узнали о конкурсе">
+                        <option value="От знакомых">От знакомых</option>
+                        <option value="От преподавателей">От преподавателей</option>
+                        <option value="Из e-mail рассылки">Из e-mail рассылки</option>
+                        <option value="В социальных сетях">В социальных сетях</option>
+                        <option value="Из СМИ">Из СМИ</option>
+                      </select>
                 </label>
             </div>
             <div class="form__btns">
                 <input type="submit" value="Отправить" class="button form__button">
-                <input type="reset" value="Очистить" class="button form__button">
             </div>
         </div>
     </form>

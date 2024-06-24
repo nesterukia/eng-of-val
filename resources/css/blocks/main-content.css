@@ -1,5 +1,28 @@
 .main-content{
     max-width: 100%;
-    margin-top: 150px;
+    margin-top: 145px;
     cursor: none;
+    padding: 0 10vw;
+    background: 
+    linear-gradient(135deg,  
+    rgba(105, 120, 224, 1) 0%,
+    rgba(26,50,224,1) 6%,
+    rgba(105, 120, 224, 1) 12%, 
+    rgba(26,50,224,1) 18%, 
+    rgba(105, 120, 224, 1) 25%,
+    rgba(26,50,224,1) 32%,
+    rgba(105, 120, 224, 1) 38%, 
+    rgba(26,50,224,1) 44%, 
+    rgba(105, 120, 224, 1) 50%,
+    rgba(26,50,224,1) 56%,
+    rgba(105, 120, 224, 1) 62%, 
+    rgba(26,50,224,1) 68%, 
+    rgba(105, 120, 224, 1) 75%,
+    rgba(26,50,224,1) 82%,
+    rgba(105, 120, 224, 1) 88%, 
+    rgba(26,50,224,1) 94%, 
+    rgba(105, 120, 224, 1) 100%);
+
+    background-size: 100vw calc(1100vh - 145px);
+    background-repeat: no-repeat;
 }

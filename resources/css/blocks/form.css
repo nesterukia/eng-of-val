@@ -3,11 +3,13 @@
     flex-direction: row;
     justify-content: center;
     width: 100%;
+    height: 100%;
 }
 
 .form__col{
     display: flex;
     flex-direction: column;
+    width: 100%;
 }
 
 .form__row{
@@ -19,22 +21,25 @@
 
 .form__block{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-between;
-    align-items: center;
+    align-items: start;
     width: 100%;
 }
 
 .form__title{
     color: #1a32e0;
+    margin-bottom: 10px;
 }
 
 .form__input{
     border: 2px solid transparent;
-    width: 70%;
+    width: 100%;
     border-radius: 5px;
     padding: 10px;
+    min-width: 400px;
     background-color: #1a31e02a;
+    transition: border-color .2s;
 
     &:focus{
         border-color: #1a32e0;
@@ -63,6 +68,7 @@
         color: #1a32e0;
         background-color: white;
         transition: 0.3s;
+        border-color: #1a32e0;
     }
 }
 @keyframes rotation{
@@ -86,13 +92,12 @@
     color:#1a32e0;
     font-weight: 600;
     font-size: 30px;
-    margin-bottom: 30px;
     width: 100%;
+    margin-bottom: 20px;
 }
 
 .form__checkmark{
-    /* height:100%;
-    width: 100%; */
+    height: fit-content;
     display:flex;
     justify-content:center;
     align-items:center;

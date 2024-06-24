@@ -1,3 +1,4 @@
+const scriptURL = "https://script.google.com/macros/s/AKfycbzoLCR_EKH_K6foxCuH-0SMORD4I_b0KvIs44gbA8fLqynOmG5kSVr69e1KI_uhamXv/exec";
 const menuButton = document.querySelector(".menu__button");
 const body = document.querySelector("body");
 menuButton.addEventListener('click', openModal);
@@ -28,18 +29,15 @@ function openModal(event){
     regModal.appendChild(container);
     container.appendChild(regFlex);
 
-
     fetch("resources/data/reg-modal-inner.html")
     .then((res) => res.text())
     .then((text) => {
         regFlex.innerHTML = text;
-
         const crossButton = document.querySelector(".registration__cross-button");
         crossButton.addEventListener('click', e =>{
             regModal.classList.remove('registration-modal--visible');
             regModal.remove();
             body.classList.remove('body--no-scroll');
-        
             circles.forEach(circle => {
                 circle.style.display = 'block';
             });
@@ -48,14 +46,15 @@ function openModal(event){
         const form = document.querySelector(".form");
         form.addEventListener("submit", (e)=>{
             e.preventDefault();
-            const fullName = form.querySelector("[name='full-name']");
-            const email = form.querySelector("[name='email']");
-            const isValid = validateFields(form, [fullName, email]);
+            const fields = document.querySelectorAll(".form__input");
+            const isValid = validateFields(form, fields);
             if(isValid){
-                console.log("loading...");
                 regFlex.innerHTML = '<div class="form__loader"><div class="loader"></div>';
                 let data = new FormData(form);
-                fetch('https://script.google.com/macros/s/AKfycbxh5diO40OrOZkCOS-1S6XT8MA4PURGNY8cRfw4Psh6vaeiTBAx0ct4CurFR8VhxNRi/exec',{
+                data.forEach((value, key) => {
+                    console.log(value, key);
+                });
+                fetch(scriptURL, {
                     method: "POST",
                     body: data
                 })
@@ -65,23 +64,23 @@ function openModal(event){
                         regFlex.appendChild(crossButton);
                         const message = document.createElement("div");
                         message.classList.add("form__message");
+                        regFlex.appendChild(message);
                         let messageText;
                         if(data.result == 'success'){
                             messageText = document.createTextNode("Ваша заявка успешно отправлена!");
+                            message.appendChild(messageText);
+                            const checkmark = document.createElement("div");
+                            checkmark.classList.add("form__checkmark");
+                            message.after(checkmark);
+                            fetch("resources/data/checkmark.html")
+                                .then((res) => res.text())
+                                .then((text) => {
+                                    checkmark.innerHTML = text;
+                                });
                         } else{
-                            messageText = document.createTextNode("Ваша заявка успешно отправлена!");
+                            messageText = document.createTextNode("Что-то пошло не так. Попробуйте позже.");
+                            message.appendChild(messageText);
                         }
-                        message.appendChild(messageText);
-                        regFlex.appendChild(message);
-
-                        const checkmark = document.createElement("div");
-                        checkmark.classList.add("form__checkmark");
-                        fetch("resources/data/checkmark.html")
-                            .then((res) => res.text())
-                            .then((text) => {
-                                checkmark.innerHTML = text;
-                            });
-                        regFlex.appendChild(checkmark);
                     });
             } else console.log("invalid!");
         });

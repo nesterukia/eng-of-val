@@ -15,6 +15,10 @@
 @import url("blocks/menu.css");
 @import url("blocks/logo.css");
 
+@import url("blocks/main-section.css");
+@import url("blocks/blob.css");
+@import url("blocks/info-points.css");
+
 @import url("blocks/about.css");
 
 @import url("blocks/pictures.css");
@@ -24,3 +28,7 @@
 
 
 @import url("blocks/partners.css");
+
+@import url("blocks/contacts.css");
+@import url("blocks/icon-marker.css");
+@import url("blocks/socials.css");

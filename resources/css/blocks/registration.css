@@ -10,7 +10,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 5vh 20vw;
+    padding: 5vh 5vw;
     z-index: -20;
 }
 
@@ -25,11 +25,14 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
     position: relative;
     background-color: white;
     border-radius: 20px;
     padding: 80px;
-    height: fit-content;
+    min-width: 50%;
+    min-height: 50%;
+    height: 100%;
     opacity: 1 ;
 }
 
@@ -55,4 +58,6 @@
     align-items: center;
     height: 100%;
     width: 100%;
+    padding: 0 10px;
+    overflow: scroll;
 }

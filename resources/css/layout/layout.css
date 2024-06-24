@@ -28,21 +28,18 @@ body{
     height: auto;
     max-width: 100%;
     overflow: hidden;
-    background-color: #1a32e0;
-}
-.main-content{
-    padding: 0 10vw;
 }
 
 
 .section{
-    border: 2px solid white;
+    /* border: 2px solid white; */
     border-radius: 20px;
     padding: 20px;
-    margin-bottom: 10px;
-    height: calc(100vh - 160px);
+    /* margin-bottom: 10px; */
+    height: calc(100vh - 145px);
     width: 100%;
     overflow: hidden;
+    /* background: linear-gradient(135deg,  rgba(255,255,255,1) 0%, rgba(26,50,224,1) 50%, rgba(255,255,255,1) 100%); */
 }
 
 .section--bg-white{
@@ -96,4 +93,10 @@ img{
 button{
     all: unset;
     user-select: none;
+}
+
+textarea{
+    width: 100%;
+    resize: vertical;
+    min-height: 50px;
 }

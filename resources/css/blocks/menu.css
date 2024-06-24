@@ -2,6 +2,7 @@
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
+    width: 100%;
     align-items: center;
 }
 .menu__element{
@@ -10,28 +11,33 @@
     transition: .3s;
     flex-wrap: wrap;
     font-size: 15px;
+    font-weight: 600;
     height: 100%;
-    overflow: hidden;
-    padding: 20px 0;
+    overflow: visible;
+    padding: 10px 0;
     &:hover{
         transform: translateY(-10px);
     }
     &:last-child{
         margin-right: 0;
     }
+    &:hover .menu__button{
+        color: #1a32e0;
+        background-color: white;
+        border-color: #1a32e0;
+        transition: 0.3s;
+        box-shadow: 5px 5px 2px #1a32e0;
+    }
 }
 .menu__link{
     padding: 20px 0;
     height: 100%;
     overflow: hidden;
+    transition: box-shadow 0.3s;
 }
 .menu__button{
     color: white;
     background-color: #1a32e0;
     font-weight: 800;
-    &:hover{
-        color: #1a32e0;
-        background-color: white;
-        transition: 0.3s;
-    }
+    transition: box-shadow 0.3s;
 }

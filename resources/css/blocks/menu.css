@@ -11,6 +11,7 @@
     transition: .3s;
     flex-wrap: wrap;
     font-size: 15px;
+    font-weight: 600;
     height: 100%;
     overflow: visible;
     padding: 10px 0;

@@ -275,7 +275,27 @@
         <section data-section-id="contacts" class="section contacts">
             <div class="container">
                 <div class="contacts-flex">
-                    <h1 class="contacts__title">Контакты</h1>
+                    <div class="contacts__info">
+                        <h1 class="contacts__title">Контакты</h1>
+                        <div class="contacts__desc">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi possimus asperiores commodi, cumque deleniti ea? Dolorum ipsam, laboriosam harum ipsa nemo, modi assumenda dolor sunt soluta corporis, maiores cumque eveniet.
+                        </div>
+                        <div class="contacts__socials">
+                            <ul class="socials">
+                                <li class="socials__item">
+                                    <a href="https://vk.com/konkursforum_is" class="socials__link">
+                                        <img class="socials__logo" src="resources/images/icons/vk-logo.svg" alt="vk">
+                                    </a>
+                                </li>
+                                <li class="socials__item">
+                                    <a href="https://t.me/engineersofmeanings" class="socials__link">
+                                        <img class="socials__logo" src="resources/images/icons/tg-logo.svg" alt="telegram">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div id="contacts-map" class="contacts__map"></div>
                 </div>
             </div>
         </section>
@@ -289,5 +309,7 @@
     <script src="resources/js/pdf-hover.js"></script>
     <script src="resources/js/pictures-section.js"></script>
     <script src="resources/js/load-file.js"></script>
+    <script src="https://api-maps.yandex.ru/v3/?apikey=19a5225d-4b19-44aa-8473-01433840f675&lang=ru_RU"></script>
+    <script src="resources/js/map.js"></script>
 </body>
 </html>

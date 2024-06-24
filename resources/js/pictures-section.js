@@ -20,7 +20,7 @@ leftButton.addEventListener("click", e =>{
     inputs[inputNum].checked = true;
     setTimeout(()=>{
         runAnimation = true;
-    }, 5000);
+    }, 4000);
 })
 
 rightButton.addEventListener("click", e =>{
@@ -34,7 +34,7 @@ rightButton.addEventListener("click", e =>{
     inputs[inputNum].checked = true;
     setTimeout(()=>{
         runAnimation = true;
-    }, 5000);
+    }, 4000);
 })
 picturesSection.addEventListener("mouseover", e =>{
     e.target.style.cursor = 'pointer';
@@ -70,13 +70,13 @@ for (let i = 0; i < labels.length; i++) {
 
 setInterval(() => {
     if(runAnimation){
+        inputNum++;
+        if(inputNum == 9){
+            inputNum = 0;
+        }
         inputs.forEach(input => {
             input.checked = false;
         });
         inputs[inputNum].checked = true;
-        inputNum++;
-        if(inputNum == 10){
-            inputNum = 0;
-        }
     }
 }, 4000);

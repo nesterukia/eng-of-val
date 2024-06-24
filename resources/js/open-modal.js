@@ -1,4 +1,4 @@
-const scriptURL = "https://script.google.com/macros/s/AKfycbwHLtWZfMEi-J3EhIpLM-immQIx1Nqbd_qOtk-_bx_hWysJATCGoa1PEfbq6kcUFWTU/exec";
+const scriptURL = "https://script.google.com/macros/s/AKfycbzoLCR_EKH_K6foxCuH-0SMORD4I_b0KvIs44gbA8fLqynOmG5kSVr69e1KI_uhamXv/exec";
 const menuButton = document.querySelector(".menu__button");
 const body = document.querySelector("body");
 menuButton.addEventListener('click', openModal);
@@ -54,7 +54,7 @@ function openModal(event){
                 data.forEach((value, key) => {
                     console.log(value, key);
                 });
-                fetch(scriptURL,{
+                fetch(scriptURL, {
                     method: "POST",
                     body: data
                 })

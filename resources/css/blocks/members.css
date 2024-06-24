@@ -36,15 +36,14 @@
     position: absolute;
     writing-mode:vertical-lr;
     text-orientation: mixed;
-    font-weight: 600;
+    font-weight: 800;
     font-size: 20px;
     color: #1a32e0;
     opacity: 0;
     transition: opacity 0.3s;
-    bottom: 0;
+    top: 50%;
     right: 2%;
     transform: translateY(-50%) scale(-1);
-    /* text-shadow: 2px 2px 2px #1a32e0; */
 }
 
 .member__name{
@@ -61,5 +60,5 @@
 .member__pic{
     height: 100%;
     object-fit: cover;
-    object-position: center;
+    object-position: right;
 }

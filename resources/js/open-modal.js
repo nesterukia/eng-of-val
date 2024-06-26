@@ -5,9 +5,10 @@ menuButton.addEventListener('click', openModal);
 
 
 function validateFields(form, fieldsArray){
+    const incorrect = ["", "-"];
     fieldsArray.forEach(field => {
         field.classList.remove("input-error");
-        if(field.value.trim() == ""){
+        if(incorrect.includes(field.value.trim())){
             field.classList.add("input-error");
         }
     });

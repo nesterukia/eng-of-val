@@ -12,7 +12,7 @@
 .member{
     position: relative;
     height: 100%;
-    max-width: 100;
+    max-width: 100%;
     margin-right: 10px;
     border-radius: 20px;
     transition: .3s;
@@ -23,7 +23,7 @@
     }
     &:hover{
         filter: brightness(1);
-        transform: translateZ(200px);
+        transform: translateZ(100px);
     }
     &:hover .member__name{
         opacity: 1;

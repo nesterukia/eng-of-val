@@ -12,6 +12,11 @@ function LoadFile(event)
     document.getElementById(event.target.id + "FileData").value = fileData;
     document.getElementById(event.target.id + "MimeType").value = mimeType;
     document.getElementById(event.target.id + "FileName").value = fileName;
+
+    const button = (event.target).nextElementSibling;
+    console.log(button);
+    const buttonText = button.querySelector(".file-input__button-text");
+    buttonText.innerText = fileName;
   };    
   reader.readAsDataURL(file);
 }

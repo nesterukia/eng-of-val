@@ -44,7 +44,7 @@
     &:focus{
         border-color: #1a32e0;
         outline:none;
-    }
+    } 
 }
 
 .input-error{

@@ -1,0 +1,52 @@
+.file-input{
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+} 
+  
+.file-input__icon-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-right: 1px solid #fff;
+    padding: 5px 10px;
+    transition: .3s;
+}
+
+.file-input__icon{
+    height: 40px;
+    width: 40px;
+    padding: 5px;
+    transition-delay: .1s;
+    transition-property: filter;
+    /* background-color: white; */
+}
+   
+.file-input__button-text {
+    font-weight: 600;
+    padding: 10px;
+}
+   
+.file-input__button {
+    background: #1a32e0;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    border: 2px solid transparent;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: .3s;
+    &:hover{
+        background-color: white;
+        border-color: #1a32e0;
+        color: #1a32e0; 
+    }
+    &:hover .file-input__icon-wrapper .file-input__icon{
+        filter: invert(74%) sepia(93%) saturate(6537%) hue-rotate(237deg) brightness(85%) contrast(110%);
+    }
+    &:hover .file-input__icon-wrapper{
+        border-right:1px solid #1a32e0;
+    }
+}
+  

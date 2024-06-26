@@ -14,25 +14,25 @@
             <div class="form__row">
                 <label class="form__block">
                     <div class="form__title">Город</div>
-                    <input type="text" name="Город" class="form__input" placeholder="">
+                    <input type="text" name="Город" class="form__input" placeholder="например: Санкт-Петербург">
                 </label>
             </div>
             <div class="form__row">
                 <label class="form__block">
                     <div class="form__title">Место учебы</div>
-                    <input type="text" name="Место учебы" class="form__input">
+                    <input type="text" name="Место учебы" class="form__input" placeholder="например: СПбПУ">
                 </label>
             </div>
             <div class="form__row">
                 <label class="form__block">
                     <div class="form__title">Факультет</div>
-                    <input type="text" name="Факультет" class="form__input">
+                    <input type="text" name="Факультет" class="form__input" placeholder="например: Гуманитарный институт">
                 </label>
             </div>
             <div class="form__row">
                 <label class="form__block">
                     <div class="form__title">Направление подготовки</div>
-                    <input type="text" name="Направление подготовки" class="form__input">
+                    <input type="text" name="Направление подготовки" class="form__input" placeholder="например: Реклама и связь с общественностью">
                 </label>
             </div>
             <div class="form__row">
@@ -53,19 +53,19 @@
             <div class="form__row">
                 <label class="form__block">
                     <div class="form__title">Ссылка на ВК участников</div>
-                    <textarea type="text" name="Ссылка на ВК участников" class="form__input"></textarea>
+                    <textarea type="text" name="Ссылка на ВК участников" class="form__input" placeholder="Перечислите через запятую (до 5 человек)"></textarea>
                 </label>
             </div>
             <div class="form__row">
                 <label class="form__block">
                     <div class="form__title">Номер телефона</div>
-                    <textarea type="text" name="Номер телефона" class="form__input"></textarea>
+                    <textarea type="text" name="Номер телефона" class="form__input" placeholder="Перечислите через запятую (до 5 человек)"></textarea>
                 </label>
             </div>
             <div class="form__row">
                 <label class="form__block">
                     <div class="form__title">Email капитана команды</div>
-                    <input type="email" name="Email капитана команды" class="form__input">
+                    <input type="email" name="Email капитана команды" class="form__input" placeholder="example@mail.ru">
                 </label>
             </div>
             <div class="form__row">
@@ -85,49 +85,61 @@
             <div class="form__row">
                 <label class="form__block">
                     <div class="form__title">Название работы</div>
-                    <input type="text" name="Название работы" class="form__input">
+                    <input type="text" name="Название работы" class="form__input" placeholder="Работа-работёнушка">
                 </label>
             </div>
             <div class="form__row">
-                <label class="form__block">
+                <label class="form__block form__block--file-input">
                     <div class="form__title">Ваша работа в формате Word</div>
-                    <input type="file" accept=".doc, .docx" id="word" name="Работа в формате Word" class="form__input" onchange="LoadFile(event)"/>
+                    <input type="file" accept=".doc, .docx" id="word" name="Работа в формате Word" class="form__input file-input" onchange="LoadFile(event)"/>
+                    <label for="word" class="file-input__button">
+                        <span class="file-input__icon-wrapper">
+                            <img class="file-input__icon" src="resources/images/icons/upload.svg" alt="Выбрать файл" width="25">
+                        </span>
+                        <span class="file-input__button-text">Выберите файл</span>
+                     </label>
                     <input type="hidden" id="wordFileData" name="wordFileData" />
                     <input type="hidden" id="wordMimeType" name="wordMimeType" />
-                    <input type="hidden" id="wordFileName" name="wordFileName" />
+                    <input class="file-input__filename" type="hidden" id="wordFileName" name="wordFileName" />
                 </label>
             </div>
             <div class="form__row">
-                <label class="form__block">
+                <label class="form__block form__block--file-input">
                     <div class="form__title">Презентация работы в PDF-формате</div>
-                    <input type="file" id="presentation" accept=".pdf" name="Презентация работы" class="form__input" onchange="LoadFile(event)"/>
+                    <input type="file" id="presentation" accept=".pdf" name="Презентация работы" class="form__input file-input" onchange="LoadFile(event)"/>
+                    <label for="presentation" class="file-input__button">
+                        <span class="file-input__icon-wrapper">
+                            <img class="file-input__icon" src="resources/images/icons/upload.svg" alt="Выбрать файл" width="25">
+                        </span>
+                        <span class="file-input__button-text">Выберите файл</span>
+                     </label>
                     <input type="hidden" id="presentationFileData" name="presentationFileData" />
                     <input type="hidden" id="presentationMimeType" name="presentationMimeType" />
-                    <input type="hidden" id="presentationFileName" name="presentationFileName" />
+                    <input class="file-input__filename" type="hidden" id="presentationFileName" name="presentationFileName" />
                 </label>
             </div>
             <div class="form__row">
                 <label class="form__block">
                     <div class="form__title">Ссылка на работу и описание к ней на облачном хранилище</div>
-                    <input type="url" name="Ссылка на работу" class="form__input">
+                    <input type="url" name="Ссылка на работу" class="form__input" placeholder="https://example.com">
                 </label>
             </div>
             <div class="form__row">
                 <label class="form__block">
                     <div class="form__title">ФИО научного руководителя</div>
-                    <input type="text" name="ФИО научного руководителя" class="form__input">
+                    <input type="text" name="ФИО научного руководителя" class="form__input" placeholder="Иванов Иван Иванович">
                 </label>
             </div>
             <div class="form__row">
                 <label class="form__block">
                     <div class="form__title">Должность и ученая степень научного руководителя</div>
-                    <input type="text" name="Должность и ученая степень научного руководителя" class="form__input">
+                    <input type="text" name="Должность и ученая степень научного руководителя" class="form__input" placeholder="Кандидат гуманитарных наук">
                 </label>
             </div>
             <div class="form__row">
                 <label class="form__block">
                     <div class="form__title">Email научного руководителя</div>
-                    <input type="email" name="Email научного руководителя" class="form__input">
+                    <input type="email" name="Email научного руководителя" class="form__input" placeholder="example@mail.ru">
                 </label>
             </div>
             <div class="form__row">

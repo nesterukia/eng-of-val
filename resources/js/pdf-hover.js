@@ -2,6 +2,7 @@ const rulesDoc = document.querySelector(".rules__document");
 const rulesFallback = document.querySelector(".rules__fallback");
 const aboutPicture = document.querySelector(".about__picture");
 const header = document.querySelector("header");
+const footer = document.querySelector("footer");
 
 const whiteSections = document.querySelectorAll(".section--bg-white");
 
@@ -24,6 +25,17 @@ header.addEventListener("mouseover", e =>{
     });
 })
 header.addEventListener("mouseout", e =>{
+    circles.forEach(circle => {
+        circle.style.opacity = '1';
+    });
+})
+
+footer.addEventListener("mouseover", e =>{
+    circles.forEach(circle => {
+        circle.style.opacity = '0';
+    });
+})
+footer.addEventListener("mouseout", e =>{
     circles.forEach(circle => {
         circle.style.opacity = '1';
     });

@@ -18,7 +18,7 @@ leftButton.addEventListener("click", e =>{
     inputs[inputNum].checked = true;
     setTimeout(()=>{
         runAnimation = true;
-    }, 4000);
+    }, 4001);
 
     console.log("leftButton", inputNum);
 })
@@ -34,7 +34,7 @@ rightButton.addEventListener("click", e =>{
     inputs[inputNum].checked = true;
     setTimeout(()=>{
         runAnimation = true;
-    }, 4000);
+    }, 4001);
 
     console.log("rightButton", inputNum);
 })
@@ -72,8 +72,7 @@ for (let i = 0; i < labels.length; i++) {
 
 
 setInterval(() => {
-    runAnimation = isScrolledIntoView(leftButton) ? true : false;
-    if(runAnimation){
+    if(runAnimation && isScrolledIntoView(leftButton)){
         inputNum++;
         if(inputNum == 10){
             inputNum = 0;

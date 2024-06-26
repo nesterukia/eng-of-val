@@ -9,6 +9,7 @@
 
 @import url("blocks/registration.css");
 @import url("blocks/form.css");
+@import url("blocks/file-input.css");
 
 @import url("blocks/main-content.css");
 @import url("blocks/header.css");
@@ -38,3 +39,5 @@
 @import url("blocks/contacts.css");
 @import url("blocks/icon-marker.css");
 @import url("blocks/socials.css");
+
+@import url("blocks/footer.css");

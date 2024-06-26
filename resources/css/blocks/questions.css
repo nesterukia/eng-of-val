@@ -2,14 +2,13 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    /* height: 100%; */
     width: 100%;
 }
 
 .question{
     position: relative;
+    cursor: default;
     width: 100%;
-    cursor: pointer;
     background-color: white;
     color: #1a32e0;
     padding: 20px;
@@ -22,7 +21,8 @@
 }
 
 .question__body{
-    transition: margin-bottom 0.5s;
+    transition: margin-bottom 0.3s;
+    cursor: pointer;
 }
 .question--opened{
     & .question__answer{
@@ -46,6 +46,7 @@
     border: 2px solid #1a32e0;
     width: 50px;
     height: 50px;
+    padding: 10px;
     border-radius: 100px;
     cursor: pointer;
     transition: transform 0.3s;
